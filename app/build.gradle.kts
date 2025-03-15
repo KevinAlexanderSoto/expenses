@@ -42,7 +42,10 @@ android {
         jvmTarget = "11"
     }
 }
-
+// Compile time check
+ksp {
+    arg("KOIN_CONFIG_CHECK","true")
+}
 
 dependencies {
 
@@ -59,7 +62,7 @@ dependencies {
     implementation(composeBom)
     androidTestImplementation(composeBom)
 
-    // Choose one of the following:
+    // -------------- COMPOSE ----------------
     // Material Design 3
     implementation(libs.androidx.material3)
     // or skip Material Design and build directly on top of foundational components
@@ -79,13 +82,20 @@ dependencies {
     // Optional - Integration with ViewModels
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    //------------------KOIN-------------------
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.annotations)
+    ksp(libs.koin.ksp.compiler)
+    //-------------------ROOM-------------
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     // To use Kotlin annotation processing tool (kapt)
     ksp(libs.androidx.room.compiler)
     // optional - Paging 3 Integration
     implementation(libs.androidx.room.paging)
-    // UI Tests
+    //---------------UI Tests----------------
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.test.manifest)
     testImplementation(libs.junit)

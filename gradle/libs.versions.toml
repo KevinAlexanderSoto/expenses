@@ -1,6 +1,11 @@
 [versions]
 activityCompose = "1.10.1"
 agp = "8.4.2"
+koinAndroid = "4.1.0-Beta5"
+koinAndroidxCompose = "4.1.0-Beta5"
+koinAnnotations = "2.0.0"
+koinCore = "4.1.0-Beta5"
+koinKspCompiler = "2.0.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -34,6 +39,11 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroid" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinAndroidxCompose" }
+koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koinAnnotations" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
+koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koinKspCompiler" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
