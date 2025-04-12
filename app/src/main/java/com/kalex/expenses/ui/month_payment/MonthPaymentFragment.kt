@@ -19,7 +19,7 @@ class MonthPaymentFragment : Fragment() {
         return ComposeView(requireContext()).apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
             setContent {
-               MonthPaymentMain()
+                MonthPaymentMain()
             }
         }
     }
