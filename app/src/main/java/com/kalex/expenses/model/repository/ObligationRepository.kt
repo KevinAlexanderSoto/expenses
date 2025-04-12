@@ -8,6 +8,6 @@ import kotlinx.coroutines.flow.Flow
  * **/
 interface ObligationRepository {
     suspend fun getObligations(): Flow<List<Obligation>>
-    suspend fun saveObligation()
-    suspend fun deleteObligation()
+    suspend fun saveObligation(obligation: Obligation)
+    suspend fun deleteObligation(obligation: Obligation)
 }

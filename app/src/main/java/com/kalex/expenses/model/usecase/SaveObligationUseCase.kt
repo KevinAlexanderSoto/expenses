@@ -1,5 +1,7 @@
 package com.kalex.expenses.model.usecase
 
+import androidx.compose.ui.input.key.Key
+import com.kalex.expenses.data.db.Obligation
 import com.kalex.expenses.model.repository.ObligationRepository
 
 /**
@@ -7,6 +9,6 @@ import com.kalex.expenses.model.repository.ObligationRepository
  * **/
 class SaveObligationUseCase(private val repository: ObligationRepository) {
 
-    suspend operator fun invoke() = repository.saveObligation()
+    suspend operator fun invoke(obligation: Obligation) = repository.saveObligation(obligation)
 
 }
