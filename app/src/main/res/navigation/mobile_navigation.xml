@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.kalex.expenses.ui.expenses.ExpensesFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_expenses"
         tools:layout="@layout/fragment_expenses" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.kalex.expenses.ui.month_payment.MonthPaymentFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_month_payment"
         tools:layout="@layout/fragment_month_payment" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.kalex.expenses.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_budget"
         tools:layout="@layout/fragment_configurations" />
 </navigation>
