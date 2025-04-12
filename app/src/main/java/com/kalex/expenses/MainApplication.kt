@@ -2,6 +2,7 @@ package com.kalex.expenses
 
 import android.app.Application
 import com.kalex.expenses.di.coreModule
+import com.kalex.expenses.di.dataBaseModule
 import org.koin.core.context.startKoin
 
 /**
@@ -13,6 +14,7 @@ class MainApplication: Application() {
         super.onCreate()
         startKoin {
             coreModule
+            dataBaseModule
         }
     }
 }
