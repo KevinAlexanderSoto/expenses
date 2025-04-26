@@ -61,7 +61,8 @@ dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2025.02.00")
     implementation(composeBom)
     androidTestImplementation(composeBom)
-
+    implementation(libs.kalex.core)
+    //implementation("com.github.KevinAlexanderSoto:kalex-core:V0.0.0")
     // -------------- COMPOSE ----------------
     // Material Design 3
     implementation(libs.androidx.material3)
