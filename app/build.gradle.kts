@@ -62,7 +62,8 @@ dependencies {
     implementation(composeBom)
     androidTestImplementation(composeBom)
     implementation(libs.kalex.core)
-    //implementation("com.github.KevinAlexanderSoto:kalex-core:V0.0.0")
+    implementation(libs.kalex.ui)
+
     // -------------- COMPOSE ----------------
     // Material Design 3
     implementation(libs.androidx.material3)

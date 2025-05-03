@@ -2,6 +2,7 @@
 activityCompose = "1.10.1"
 agp = "8.9.0"
 kalexCore = "V0.0.0"
+kalexUi = "v0.1.1"
 koinAndroid = "4.1.0-Beta5"
 koinAndroidxCompose = "4.1.0-Beta5"
 koinAnnotations = "2.0.0"
@@ -41,6 +42,7 @@ androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "j
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 kalex-core = { module = "com.github.KevinAlexanderSoto:kalex-core", version.ref = "kalexCore" }
+kalex-ui = { module = "com.github.KevinAlexanderSoto:kalex-ui", version.ref = "kalexUi" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroid" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinAndroidxCompose" }
 koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koinAnnotations" }
