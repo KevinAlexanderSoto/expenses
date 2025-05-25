@@ -9,6 +9,6 @@ import com.kalex.expenses.model.repository.ObligationRepository
  * **/
 class SaveObligationUseCase(private val repository: ObligationRepository) {
 
-    suspend operator fun invoke(obligation: Obligation) = repository.saveObligation(obligation)
+    suspend operator fun invoke(obligation: Obligation) = runCatching { repository.saveObligation(obligation) }
 
 }

@@ -6,5 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.month_payment.MonthPaymentFragment">
 
+    <androidx.compose.ui.platform.ComposeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_month_payment"
+        >
+
+    </androidx.compose.ui.platform.ComposeView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

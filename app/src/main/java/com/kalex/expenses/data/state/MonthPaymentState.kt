@@ -1,9 +1,8 @@
 package com.kalex.expenses.data.state
 
-import com.kalex.expenses.data.db.Obligation
 
-sealed class MonthPaymentState {
-    object Loading : MonthPaymentState()
-    data class Success(val obligations: List<Obligation>) : MonthPaymentState()
-    data class Error(val message: String) : MonthPaymentState()
+sealed class MonthPaymentState<T> {
+    object Loading : MonthPaymentState<Nothing>()
+    data class Success<T>(val data: T) : MonthPaymentState<T>()
+    data class Error(val message: String) : MonthPaymentState<Nothing>()
 }
